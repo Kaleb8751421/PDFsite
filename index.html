@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My PDF Files</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PDF Files</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .file-info {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #ff69b4; /* Cute pink color */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff1493; /* Darker pink for hover */
+        }
+
+        .btn:active {
+            background-color: #ff66b2; /* Even darker pink for active */
+        }
+
+        .mobile-btn {
+            font-size: 18px;
+            padding: 18px 35px;
+        }
+
+        /* Mobile-friendly */
+        @media (max-width: 600px) {
+            .btn {
+                font-size: 18px;
+                padding: 18px 35px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Download My PDF</h1>
-  <a href="1020513寵物項圈.pdf" target="_blank">Click here to open the PDF</a>
+
+    <h1>Download or Open PDF</h1>
+    <p class="file-info" id="fileInfo">Current file: <strong>example.pdf</strong></p>
+
+    <a href="1020513寵物項圈.pdf" class="btn" download>Download PDF</a>
+    <br>
+    <a href="1020513寵物項圈.pdf" class="btn mobile-btn" target="_blank">Open in Browser</a>
+
 </body>
 </html>
